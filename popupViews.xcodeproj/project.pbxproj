@@ -14,6 +14,7 @@
 		0161934C2A096470000CE463 /* popupViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0161934B2A096470000CE463 /* popupViewsTests.swift */; };
 		016193562A096470000CE463 /* popupViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016193552A096470000CE463 /* popupViewsUITests.swift */; };
 		016193582A096470000CE463 /* popupViewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016193572A096470000CE463 /* popupViewsUITestsLaunchTests.swift */; };
+		016193652A0964AD000CE463 /* popupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016193642A0964AD000CE463 /* popupCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		016193512A096470000CE463 /* popupViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = popupViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		016193552A096470000CE463 /* popupViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popupViewsUITests.swift; sourceTree = "<group>"; };
 		016193572A096470000CE463 /* popupViewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popupViewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		016193642A0964AD000CE463 /* popupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popupCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				0161933C2A09646E000CE463 /* ContentView.swift */,
 				0161933E2A096470000CE463 /* Assets.xcassets */,
 				016193402A096470000CE463 /* Preview Content */,
+				016193642A0964AD000CE463 /* popupCell.swift */,
 			);
 			path = popupViews;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				0161933D2A09646E000CE463 /* ContentView.swift in Sources */,
 				0161933B2A09646E000CE463 /* popupViewsApp.swift in Sources */,
+				016193652A0964AD000CE463 /* popupCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

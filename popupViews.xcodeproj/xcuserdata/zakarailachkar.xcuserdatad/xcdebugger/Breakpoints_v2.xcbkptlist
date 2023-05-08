@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "798DE155-E962-41E9-B982-D8DD755C0ECA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "71A2346B-5767-4B3E-9B4D-2C2256BB1C78"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "popupViews/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ContentView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "71A2346B-5767-4B3E-9B4D-2C2256BB1C78 - d5c5b79b799c9fdf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of popupViews.ContentView.nativeAlert : Swift.Bool"
+                  moduleName = "popupViews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zakarailachkar/Desktop/learn/popupViews/popupViews/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "71A2346B-5767-4B3E-9B4D-2C2256BB1C78 - 5b8b685596e4185"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "popupViews.ContentView.nativeAlert.getter : Swift.Bool"
+                  moduleName = "popupViews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zakarailachkar/Desktop/learn/popupViews/popupViews/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "71A2346B-5767-4B3E-9B4D-2C2256BB1C78 - d5fe6c29e75ab989"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "popupViews.ContentView.nativeAlert.setter : Swift.Bool"
+                  moduleName = "popupViews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zakarailachkar/Desktop/learn/popupViews/popupViews/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "71A2346B-5767-4B3E-9B4D-2C2256BB1C78 - 120d44579cfbb86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "popupViews.ContentView.nativeAlert.modify : Swift.Bool"
+                  moduleName = "popupViews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zakarailachkar/Desktop/learn/popupViews/popupViews/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "71A2346B-5767-4B3E-9B4D-2C2256BB1C78 - 31de9a1255b4fb89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "popupViews.ContentView.nativeAlert.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "popupViews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zakarailachkar/Desktop/learn/popupViews/popupViews/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "71A2346B-5767-4B3E-9B4D-2C2256BB1C78 - d4c0025e2a80bf41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "popupViews.ContentView.$nativeAlert.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "popupViews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zakarailachkar/Desktop/learn/popupViews/popupViews/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "71A2346B-5767-4B3E-9B4D-2C2256BB1C78 - 9748c39450152ba7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "popupViews.ContentView.init() -&gt; popupViews.ContentView"
+                  moduleName = "popupViews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zakarailachkar/Desktop/learn/popupViews/popupViews/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
