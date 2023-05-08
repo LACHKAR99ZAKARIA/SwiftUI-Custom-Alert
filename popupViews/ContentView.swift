@@ -50,11 +50,6 @@ struct ContentView: View {
         let cancel = UIAlertAction(title: "Cancel", style: .cancel) { _ in
             print("Canceled")
         }
-        
-        let View = ZStack {
-            Text("test")
-        }
-        
         alert.addAction(cancel)
         alert.addAction(login)
         // Récupérer toutes les scènes connectées à l'application
@@ -81,8 +76,11 @@ func customA() {
     alertController.addAction(cancel)
     alertController.addAction(login)
 
-    // Présenter l'alerte
-    UIApplication.shared.windows.first?.rootViewController?.present(alertController, animated: true, completion: nil)
+    if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+        if let window = windowScene.windows.first(where: { $0.isKeyWindow }) {
+            window.rootViewController?.present(alertController, animated: true, completion: nil)
+        }
+    }
 }
 
 // Créer une vue personnalisée avec un ZStack
