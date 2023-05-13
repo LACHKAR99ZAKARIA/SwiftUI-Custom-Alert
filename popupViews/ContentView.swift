@@ -12,23 +12,56 @@ struct ContentView: View {
     @State var customAlert = false
     @State var HUB = false
     @State var password = ""
-    var body: some View {
-        VStack {
-            Button {
-                withAnimation {
-                    nativeAlert.toggle()
-                    alertView()
+    
+    @State private var showingModal = false
+        
+        var body: some View {
+            ZStack {
+                VStack(spacing: 20) {
+                    Text("Custom Popup").font(.largeTitle)
+                    
+                    Text("Introduction").font(.title).foregroundColor(.gray)
+                    
+                    Text("You can create your own modal popup with the use of a ZStack and a State variable.")
+                        .frame(maxWidth: .infinity)
+                        .padding().font(.title).layoutPriority(1)
+                        .background(Color.orange).foregroundColor(Color.white)
+                    
+                    Button(action: {
+                        self.showingModal = true
+                    }) {
+                        Text("Show popup")
+                    }
+                    Spacer()
                 }
-            } label: {
-                Text("Native Alert with TextField")
+                
+                // The Custom Popup is on top of the screen
+                if $showingModal.wrappedValue {
+                    // But it will not show unless this variable is true
+                    ZStack {
+                        Color.black.opacity(0.4)
+                            .edgesIgnoringSafeArea(.vertical)
+                        // This VStack is the popup
+                        VStack(spacing: 20) {
+                            Text("Popup")
+                                .bold().padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.orange)
+                                .foregroundColor(Color.white)
+                            Spacer()
+                            Button(action: {
+                                self.showingModal = false
+                            }) {
+                                Text("Close")
+                            }.padding()
+                        }
+                        .frame(width: 300, height: 200)
+                        .background(Color.white)
+                        .cornerRadius(20).shadow(radius: 20)
+                    }
+                }
             }
-            
-            Text(password)
-                .fontWeight(.bold)
-
         }
-        .padding()
-    }
     
     func alertView() {
         let alert = UIAlertController(title: "Login", message: "Enter Your Password", preferredStyle: .alert)
@@ -72,7 +105,10 @@ func customA() {
 
     // Ajouter des actions à l'alerte
     let cancel = UIAlertAction(title: "Annuler", style: .cancel, handler: nil)
-    let login = UIAlertAction(title: "Se connecter", style: .default, handler: nil)
+    let login = UIAlertAction(title: "Se connecter", style: .default) { _ in
+        customAView()
+    }
+
     alertController.addAction(cancel)
     alertController.addAction(login)
 
@@ -91,9 +127,46 @@ class CustomView: UIView {
         label.text = "test"
         addSubview(label)
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+func customAView() {
+    // Créer une instance de la vue SwiftUI à afficher
+    let customView = TramView()
+
+    // Créer une instance de UIHostingController pour la vue SwiftUI
+    let hostingController = UIHostingController(rootView: customView)
+
+    // Présenter le UIHostingController modalement
+    if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+        if let window = windowScene.windows.first(where: { $0.isKeyWindow }) {
+            window.rootViewController?.present(hostingController, animated: true, completion: nil)
+        }
+    }
+}
+
+struct TramView: View {
+    var body: some View {
+        VStack {
+            Text("tram")
+                .scaledToFit()
+                .frame(width: 200, height: 100)
+        }
+        .frame(width: 200, height: 100)
+    }
+}
+
+
+// Créer la vue SwiftUI à afficher
+struct CustomSwiftUIView: View {
+    var body: some View {
+        ZStack {
+            Color.white
+            Text("test")
+        }
+        .frame(width: 200, height: 200)
     }
 }
 
